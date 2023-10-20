@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta</title>
+    <link rel="stylesheet" href="../../public/assets/css/consulta.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <a href="../home/index.php"><img src="../../public/imagens/chevron-back-outline.svg" alt=""></a> 
+        <div class="form">
+            <form action="consulta.php" id="form" onsubmit="return validarFormulario();" method="POST">
+                <div class="title">
+                    <h1>Marque a sua Consulta</h1>
+                </div>
+                <div class="form-header">
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="pnome">Primeiro nome</label>
+                            <input type="text" name="pnome" id="pnome" placeholder="Digite seu primeiro nome" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="unome">Sobrenome</label>
+                            <input type="text" name="unome" id="unome" placeholder="Digite seu último nome" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="email">E-mail</label>
+                            <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="number">Telefone</label>
+                            <input type="tel" name="tel" id="number" placeholder="Digite seu telefone" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="city">Cidade/Bairro</label>
+                            <input type="text" name="city" id="city" placeholder="Digite sua Cidade ou Bairro" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="idade">Data de nascimento</label>
+                            <input type="date" name="idade" id="idade" placeholder="Digite sua data de nascimento" required>
+                        </div>
+                        <div class="input-box">
+                            <label for="bi">BI</label>
+                            <input type="text" name="bi" id="bi" placeholder="Digite seu nº de BI" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="hora">Horário</label>
+                            <input type="time" name="hora" id="hora" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="tipo_consulta">Tipo de consulta</label>
+                            <select name="tipo_consulta" id="tipo_consulta">
+                                <option value=""></option>
+                                <option value="Análises">Análises</option>
+                                <option value="Cirurgias">Cirurgias</option>
+                                <option value="Check-ups">Check-ups</option>
+                                <option value="Vacinas">Vacinas</option>
+                                <option value="Medição de atenção">Medição de atenção</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h3>Gênero</h3>
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input type="radio" id="fem" name="gender" value="Feminino">
+                                <label for="fem">Feminino</label>
+                            </div>
+
+                            <div class="gender-input">
+                                <input type="radio" id="masc" name="gender" value="Masculino">
+                                <label for="masc">Masculino</label>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <div class="marc-button">
+                    <button type="submit" id="enviar_dados">Marcar Consulta</button>
+                </div>
+               
+            </form>
+        </div>
+    </div>
+   <script src="../../public/assets/javascript/consulta.js"></script>
+</body>
+</html>

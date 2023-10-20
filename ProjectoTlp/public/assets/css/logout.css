@@ -1,0 +1,9 @@
+.user-icon {
+    display: none;
+  }
+  
+  .logged-in .user-icon {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  

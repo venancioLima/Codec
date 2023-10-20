@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="../../public/assets/css/cadastro.css">
+</head>
+<body>
+    <div class="cadastro">
+       <a href="../home/index.php"><img src="../../public/imagens/chevron-back-outline.svg" alt=""></a> 
+        <form method="post" action="cadastro.php" onsubmit="return validarFormulario()">
+            <header>Faça o seu Cadastro</header>
+            <input type="text" placeholder="Digite seu nome" id="nome" name="nome">
+            <input type="email" placeholder="exemplo@gmail.com" id="email" name="email">
+            <input type="number" placeholder="Digite sua idade" id="idade" name="idade">
+            <input type="password" placeholder="Digite sua senha" id="senha" name="senha">
+            <input type="submit" value="Cadastrar" id="sub">
+        </form>
+    </div>
+    <script src="../../public/assets/javascript/cadastro.js"></script>
+</body>
+</html>

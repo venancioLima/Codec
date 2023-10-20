@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../../public/assets/css/login.css">
+</head>
+<body>
+    <div class="login">
+        <a href="../home/index.html"><img src="../../public/imagens/chevron-back-outline.svg" alt=""></a> 
+        <form action="login.php" id="formulario" onsubmit="return validarFormulario()" method="POST">
+            <header>Fazer Login</header>
+            <input type="email" placeholder="exemplo@gmail.com" title="Digite seu email" id="email" name="email">
+            <input type="password" placeholder="Digite sua senha" title="Digite sua senha" id="password" name="password">
+            <input type="submit" value="login">
+        </form>
+        <p id="cadastro-info" style="display: none;">Ainda não possui um cadastro? <a href="../cadastro/index.html">Clique aqui</a> para se cadastrar.</p>
+    </div>
+    <script src="../../public/assets/javascript/login.js"></script>
+</body>
+</html>

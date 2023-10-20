@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../../imagens/blackdoctor5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+div.cadastro{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.cadastro img{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #0446c9;
+
+}
+div.cadastro form{
+    width: 500px;
+    height: 90%;
+    display: block;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.781);
+    border-radius: 30px;
+}
+div.cadastro form header{
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    letter-spacing: 1px;
+}
+div.cadastro form input{
+    width: 300px;
+    height: 50px;
+    border: none;
+    outline: none;
+    background:#fff;
+    margin: 1.5em;
+    padding-left: 1em;
+    border-radius: 30px;
+    padding-right: 1em;
+}
+div.cadastro form input:focus{
+    border: 2px solid #0446c9;
+}
+div.cadastro form input[type="submit"]{
+    background: #0446c9;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    transition: all .5s;
+}
+div.cadastro form input[type="submit"]:hover{
+    background: rgba(0, 0, 255, 0.479);
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    border: 1px solid #0446c9;
+    transition: all .5s;
+}
+
+div.cadastro form input[type="button"]{
+    background: #ff4500;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    transition: all .5s;
+    margin-top: -2em;
+}
+div.cadastro form input[type="button"]:hover{
+    background: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ff4500;
+    transition: all .5s;
+    border:1px solid #ff4500;
+}

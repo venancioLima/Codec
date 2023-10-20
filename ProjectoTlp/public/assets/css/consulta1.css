@@ -1,0 +1,175 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0665BE;
+}
+
+div.container{
+    width: 80%;
+    height: 80vh;
+    display: flex;
+    box-shadow: 5px 5px 10px rgba(0,0,0,.212);
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #fff;
+    padding: 3em;
+}
+
+div.form-header{
+    margin-bottom: 3em;
+    display: flex;
+    justify-content: space-between;
+}
+div.form-header div.title{
+    display: block;
+}
+div.title h1::after{
+    content: '';
+    display: block;
+    width: 5em;
+    height: 0.3em;
+    background: #0446ce;
+    margin: 0 auto;
+    position: absolute;
+    border-radius: 10px;
+}
+div.title h1{
+    margin-bottom: 50px;
+}
+div.input-group{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+div.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1em;
+}
+div.input-box input{
+    margin: 0.6em 0;
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00000088;
+}
+div.input-box select{
+    margin: 0.6em 0;
+    padding: 0.8em 1.2em;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #00000088;
+    background: transparent;
+}
+div.input-box select option:hover{
+    background: #0665BE;
+    transition: all .5s;
+}
+div.input-box input:hover{
+    background-color: #eeeeee75;
+}
+
+div.input-box input:focus-visible{
+    outline: 1px solid #0446ce;
+}
+
+div.input-box input::placeholder{
+    color:#000000be ;
+}
+
+div.input-box label, div.gender-title{
+font-size: 0.75em;
+font-weight: 600;
+color: #000000c0;
+}
+div.gender-group{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.62em;
+    padding: 0 0.5em;
+}
+
+div.gender-input{
+    display: flex;
+    align-items: center;
+}
+
+div.gender-input input{
+    margin-right: 0.35em;
+}
+
+
+div.gender-input label{
+    font-size: 1em;
+    font-weight: 600;
+    color: #000000c0;
+}
+
+div.marc-button button{
+    width: 100%;
+    margin-top: 2.5em;
+    border: none;
+    background-color: #0446ce;
+    padding: 0.62em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+div.marc-button button:hover{
+    background-color: #0447ced3;
+}
+
+div.marc-button button {
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 500;
+    color: #fff;
+}
+/*Configurando mensagem de confirmação*/
+form  div.marc-button div#sobreposicao{
+    position: fixed;
+    display: none;
+    top: 0;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+form div.marc-button div#sobreposicao div#mensagem{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+form  div.marc-button div#sobreposicao div#mensagem p{
+    margin: 0;
+    font-weight: bold;
+    margin-top: 10px;
+}
